@@ -17,7 +17,7 @@ You can have a maximum of five `ActionRow`s per message, and five buttons within
 To create a button, use the `MessageActionRow()` and `MessageButton()` builder functions and then pass the resulting object to `CommandInteraction#reply()` as `InteractionReplyOptions`:
 
 ```js {1,7-13,15}
-const { MessageActionRow, MessageButton } = require('discord.js');
+const { MessageActionRow, MessageButton} = require('discord.js');
 
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
